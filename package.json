@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "deno task dev",
-    "deploy": "npm run build && deno run --allow-env --allow-net --allow-read --env-file deploy_to_subhosting.ts"
+    "deploy": "npm run build && deno run --allow-env --allow-net --allow-read --env-file --no-lock deploy_to_subhosting.ts"
   },
   "dependencies": {
     "react": "^19.1.1",

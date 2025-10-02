@@ -30,9 +30,9 @@ jobs:
         run: npm run build
 
       - name: Setup Deno
-        uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v2.x
 
       - name: Deploy to Deno Deploy via API
         env:
@@ -40,5 +40,5 @@ jobs:
           DEPLOY_ORG_ID: ${{ secrets.DEPLOY_ORG_ID }}
           PROJECT_NAME: ${{ secrets.PROJECT_NAME || 'vite-deno-app' }}
         run: |
-          deno run --allow-env --allow-net --allow-read deploy_to_subhosting.ts
+          deno run --allow-env --allow-net --allow-read --no-lock deploy_to_subhosting.ts
 
