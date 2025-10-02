@@ -37,7 +37,7 @@ function App() {
       <div className="container">
         <div className="header">
           <div className="emoji">🦕</div>
-          <h1>Hello Deno!</h1>
+          <h1>Hello GitHub!</h1>
           <p className="subtitle">Full-stack app deployed on Deno Deploy</p>
         </div>
 
