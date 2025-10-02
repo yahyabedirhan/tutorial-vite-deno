@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno serve --watch --port 8000 server.ts",
+    "build": "npm run build"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  }
+}
+
